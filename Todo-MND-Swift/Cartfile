@@ -1,0 +1,3 @@
+github "realm/realm-cocoa"
+github "Hearst-DD/ObjectMapper" ~> 1.3
+github "Alamofire/Alamofire" ~> 3.4
