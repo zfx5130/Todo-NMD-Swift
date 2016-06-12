@@ -7,3 +7,4 @@
  - 网络封装架构[Alamofire](https://github.com/Alamofire/Alamofire) 
  - Model转换工具[ObjectMapper](https://github.com/Hearst-DD/ObjectMapper)
  - 数据缓存处理工具[Realm](https://github.com/realm/realm-cocoa)
+ - 第三方管理工具Carthage[Carthage](https://github.com/Carthage/Carthage)
