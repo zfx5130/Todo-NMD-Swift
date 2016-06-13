@@ -19,12 +19,16 @@ class ViewController: UIViewController {
         var toBeDoubled = Vector2D(x: 1.0, y: 4.0)
         let afterDoubling = +++toBeDoubled
         print(afterDoubling)
+        
+        let firstVector = Vector2D(x: 1.0, y: 2.0)
+        let secondVector = Vector2D(x: 3.0, y: 4.0)
+        let plusMinusVector = firstVector +- secondVector
+        print(plusMinusVector)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
 }
 
 prefix operator +++ {}
@@ -39,4 +43,10 @@ func += (inout left: Vector2D, right: Vector2D) {
 
 func + (left: Vector2D, right: Vector2D) -> Vector2D {
     return Vector2D(x: left.x + right.x, y: left.y + right.y)
+}
+
+infix operator +- { associativity left precedence 140 }
+
+func +- (left: Vector2D, right: Vector2D) -> Vector2D {
+    return Vector2D(x: left.x + right.x, y: left.y - right.y)
 }
